@@ -69,12 +69,12 @@
                 <input type="hidden" name="referrer_type" id="referrer_type1497776" value="link">
                 <input type="hidden" name="_submit" value="1">
                 <input type="hidden" name="style_version" value="3">
-                Join the Movement&nbsp;&nbsp;
+                Stay in Touch &nbsp;&nbsp;
                 <input type="email" id="appendedInputButton" name="field20239471" required="required" class="span2" placeholder="ENTER YOUR EMAIL" title="Email">
                 <input type="submit" class="submit btn fsSubmitButton" name="submit" id="searchsubmit" value="GO">
             </form>
         </div>
-        <div class="span3 donate"><a href="<?php bloginfo('url'); ?>/?page_id=23">Donate Now</a></div><div class="span3 news"><a href="<?php bloginfo('url'); ?>/?cat=13">Latest News</a></div>
+        <div class="span3 donate"><a href="<?php bloginfo('url'); ?>/?page_id=23">Donate</a></div><div class="span3 news"><a href="<?php bloginfo('url'); ?>/?cat=12">Latest News</a></div>
     </div>
     <div id="page" class="hfeed site">
         <?php do_action( 'before' ); ?>
