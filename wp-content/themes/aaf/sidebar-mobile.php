@@ -16,9 +16,9 @@
         <aside id="nav_menu-3" class="widget widget_nav_menu">
             <div class="menu-mobile-bottom-nav-container">
                 <ul id="menu-mobile-bottom-nav" class="menu">
-                    <li><a href="#">Recent Editions</a></li>
-                    <li><a href="#">CALIFORNIA YOUTHWIRE: STATEWIDE YOUTH MEDIA NETWORK</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a target=_blank" href="http://issuu.com/richmondpulse">Recent Editions</a></li>
+                    <li><a target=_blank href="http://www.youthwire.org/">CALIFORNIA YOUTHWIRE: STATEWIDE YOUTH MEDIA NETWORK</a></li>
+                    <li><a href="<?php bloginfo('url'); ?>/contact">Contact</a></li>
                     <li><a href="#">Donate</a></li>
                 </ul>
             </div>
