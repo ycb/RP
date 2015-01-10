@@ -56,6 +56,7 @@
 </head>
 
 <body <?php body_class(); ?>>
+
     <div class="container navbar-static-top utilitynav visible-desktop">
         <div class="span6 newsletter">
             <form method="post" novalidate="" action="http://www.formstack.com/forms/index.php" class="fsForm fsFormFree fsSingleColumn fsMaxCol1" id="fsForm1497776">
@@ -74,8 +75,8 @@
                 <input type="submit" class="submit btn fsSubmitButton" name="submit" id="searchsubmit" value="GO">
             </form>
         </div>
-        <div class="span3 donate"><a href="<?php bloginfo('url'); ?>/?page_id=23">Donate</a></div><div class="span3 news"><a href="<?php bloginfo('url'); ?>/sign-up/">Get Involved</a></div>
-    </div>
+        <div class="span3 donate"><a href="<?php bloginfo('url'); ?>/?page_id=23">Donate!</a></div><div class="span3 news"><a href="<?php bloginfo('url'); ?>/sign-up/">Get Involved</a></div>
+    </div>  
     <div id="page" class="hfeed site">
         <?php do_action( 'before' ); ?>
         <div id="phonenav" class="navbar visible-phone">
@@ -138,8 +139,8 @@
                     <ul class="socialbtns">
                         <li class="facebook"><a target="_blank" href="http://www.facebook.com/pages/Richmond-Pulse/191090144262742"></a></li>
                         <li class="twitter"><a target="_blank" href="http://twitter.com/#!/richmondpulse"></a></li>
-                        <li class="youtube"><a target="_blank" href="http://www.instagram.com/richmondpulse.com"></a></li>
-                        <li class="flickr"><a target="_blank" href="http://vimeo.com/channels/183122/"></a></li>
+                        <li class="youtube"><a target="_blank" href="http://vimeo.com/channels/183122/"></a></li>
+                        <li class="flickr"><a target="_blank" href="http://www.instagram.com/richmondpulse.com"></a></li>
                     </ul>
                 </div>
             </div>

@@ -189,14 +189,14 @@ input[type="color"] .uneditable-input {
     }
 
 .socialbtns li.facebook { background: url(images/social_icons.png)  0 0 no-repeat; }
-.socialbtns li.twitter  { background: url(images/social_icons.png)  -58px 0 no-repeat; }
+.socialbtns li.twitter  { background: url(images/social_icons.png)  -57px 0 no-repeat; }
 .socialbtns li.youtube  { background: url(images/social_icons.png)  -115px 0 no-repeat; }
 .socialbtns li.flickr  { background: url(images/social_icons.png)   -172px 0 no-repeat; }
 
 
 .logo {
     display: block;
-    width: 340px;
+    width: 342px;
     height: 72px;
     background: url('images/logo_mobile.png') 0 0 no-repeat;
     margin: 0 0 1.5rem 1.5rem;
