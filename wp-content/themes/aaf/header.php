@@ -74,7 +74,7 @@
                 <input type="submit" class="submit btn fsSubmitButton" name="submit" id="searchsubmit" value="GO">
             </form>
         </div>
-        <div class="span3 donate"><a href="<?php bloginfo('url'); ?>/?page_id=23">Donate</a></div><div class="span3 news"><a href="<?php bloginfo('url'); ?>/?cat=12">Latest News</a></div>
+        <div class="span3 donate"><a href="<?php bloginfo('url'); ?>/?page_id=23">Donate</a></div><div class="span3 news"><a href="<?php bloginfo('url'); ?>/sign-up/">Get Involved</a></div>
     </div>
     <div id="page" class="hfeed site">
         <?php do_action( 'before' ); ?>
