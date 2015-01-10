@@ -138,7 +138,7 @@
                     <ul class="socialbtns">
                         <li class="facebook"><a target="_blank" href="http://www.facebook.com/pages/Richmond-Pulse/191090144262742"></a></li>
                         <li class="twitter"><a target="_blank" href="http://twitter.com/#!/richmondpulse"></a></li>
-                        <li class="youtube"><a target="_blank" href="http://www.youtube.com/user/RichmondPulse"></a></li>
+                        <li class="youtube"><a target="_blank" href="http://www.instagram.com/richmondpulse.com"></a></li>
                         <li class="flickr"><a target="_blank" href="http://vimeo.com/channels/183122/"></a></li>
                     </ul>
                 </div>
