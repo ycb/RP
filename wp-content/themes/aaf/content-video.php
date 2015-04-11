@@ -17,8 +17,15 @@
 
     <div class="entry-content videoWrapper">
         <?php 
-        	$content = get_the_content('');
-        	echo wp_trim_words( $content, $num_words = 200, '' ) . '<br><br><a href="' . get_permalink() . '"><span class="meta-nav btn pull-right">READ MORE</span></a>';
+            $re = "/(\\[embed\\]\\S*)/"; 
+            $content = get_the_content('');
+            $arr = preg_match($re, $content, $matches);
+            $video = $matches[0];
+
+            $clean_content = preg_replace($re, '', $content);
+            the_content( );
+            
+        	//echo '<p>' . wp_trim_words( $clean_content, $num_words = 200, '' ) . '<br><br><a href="' . get_permalink() . '"><span class="meta-nav btn pull-right">READ MORE</span></a><p>';
         ?>
         <div class="socialposticons visible-desktop">
             <span class='st_facebook_hcount' displayText='Facebook'></span>&nbsp;&nbsp;&nbsp;&nbsp;
