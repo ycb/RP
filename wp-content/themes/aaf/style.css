@@ -600,6 +600,32 @@ body.error404 .entry-content .row {
 
 /*front page only*/
 
+/* mail chimp plugin */
+.mc4wp-form {
+    margin: 0;
+    padding: 0 !important;
+
+}
+
+.mc4wp-alert {
+    height: auto !important;
+    font-size: .7em;
+    padding: 0;
+    margin: -2.2em;
+    width: 100%;
+    background: #36A9CB;
+    position: absolute;
+    left: 0;
+}
+
+.mc4wp-form p {
+    display: inline-block;
+}
+
+.mc4wp-form label {
+    display: inline-block;
+}
+
 .home.page .entry-header .entry-title {
     display: block;
     font-size: 1.75rem;
