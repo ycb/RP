@@ -616,6 +616,7 @@ body.error404 .entry-content .row {
     background: #36A9CB;
     position: absolute;
     left: 0;
+    color: white;
 }
 
 .mc4wp-form p {
