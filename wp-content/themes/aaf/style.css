@@ -611,6 +611,10 @@ body.error404 .entry-content .row {
     color: #fff;
 }
 
+.entry-title {
+    clear: both;
+}
+
 h1.sectiontitle {
     font-family: 'UniversLight', Helvetica, Arial, sans-serif;
     text-transform: uppercase;
@@ -643,8 +647,13 @@ h1.sectiontitle {
     display: none;
 }
 
-#content article:first-child {
-     /* Your CSS here */
+#content article:first-child .front-thumb {
+    width: 100%;
+    float: none;
+}
+
+#content article:first-child .front-thumb  img {
+    width: 100%;
 }
 
 

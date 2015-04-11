@@ -8,16 +8,23 @@
 ?>
 <?php global $more; $more = 0; ?>
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+    <header class="entry-header">
+        <h1 class="entry-title graybg"><a href="<?php get_permalink() ?>"><?php the_title(); ?></a></h1>
+    </header><!-- .entry-header -->
+    
 	<aside class="front-thumb">
 		<?php the_post_thumbnail('medium');  ?>
 	</aside>
-    <header class="entry-header">
-        <h1 class="entry-title graybg"><?php the_title(); ?></h1>
-    </header><!-- .entry-header -->
 
     <div class="entry-content">
         <?php 
-            the_content( );
+            $excerpt = get_the_excerpt();
+            if ( $excerpt != '' ) {
+                the_excerpt();
+            } else {
+                $content = get_the_content('');
+                echo '<p>' . wp_trim_words( $content, $num_words = 100, '' ) . '<br><br><a href="' . get_permalink() . '"><span class="meta-nav btn pull-right">READ MORE</span></a><p>';
+            }
         ?>
         <div class="socialposticons visible-desktop">
             <span class='st_facebook_hcount' displayText='Facebook'></span>&nbsp;&nbsp;&nbsp;&nbsp;

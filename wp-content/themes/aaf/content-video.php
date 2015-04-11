@@ -12,7 +12,7 @@
 		<?php the_post_thumbnail('medium');  ?>
 	</aside>
     <header class="entry-header">
-        <h1 class="entry-title graybg"><?php the_title(); ?></h1>
+        <h1 class="entry-title graybg"><a href="<?php get_permalink() ?>"><?php the_title(); ?></a></h1>
     </header><!-- .entry-header -->
 
     <div class="entry-content videoWrapper">

@@ -17,17 +17,20 @@ get_header();
     <div id="content" class="site-content" role="main">
 
     	<?php 
-    		$args = array( 'numberposts' => 1 ); 
+    		$args = array( 'numberposts' => 4,
+    						'cat' => -150 ); 
     		$lastposts = get_posts( $args ); 
     		foreach($lastposts as $post) : setup_postdata($post); 
     	?>
     		<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+
+    			<header class="entry-header">
+			        <h1 class="entry-title graybg"><a href="<?php get_permalink() ?>"><?php the_title(); ?></a></h1>
+			    </header><!-- .entry-header -->
+
 				<aside class="front-thumb">
 					<?php the_post_thumbnail('medium');  ?>
 				</aside>
-			    <header class="entry-header">
-			        <h1 class="entry-title graybg"><?php the_title(); ?></h1>
-			    </header><!-- .entry-header -->
 
 			    <div class="entry-content">
 			        <?php 

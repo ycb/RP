@@ -501,3 +501,8 @@ function ycb_gallery_shortcode($attr) {
     return $output;
 }
 add_shortcode( 'gallery', 'ycb_gallery_shortcode' );
+
+function new_excerpt_more( $more ) {
+    return ' <br><br><a href="' . get_permalink( get_the_ID() ) . '"><span class="meta-nav btn pull-right">READ MORE</span></a>';
+}
+add_filter( 'excerpt_more', 'new_excerpt_more' );
