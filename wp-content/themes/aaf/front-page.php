@@ -21,24 +21,41 @@ get_header();
     		$lastposts = get_posts( $args ); 
     		foreach($lastposts as $post) : setup_postdata($post); 
     	?>
-    		<h1 class="sectiontitle">
-    			<a href="<?php the_permalink(); ?>">
-    				<?php the_title(); ?>
-    				<?php echo the_post_thumbnail( 'full' ); ?> 
-    			</a>
-    		</h1> 
-    		<?php echo wp_trim_words( get_the_content(), 200 ); ?>
+    		<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+				<aside class="front-thumb">
+					<?php the_post_thumbnail('medium');  ?>
+				</aside>
+			    <header class="entry-header">
+			        <h1 class="entry-title graybg"><?php the_title(); ?></h1>
+			    </header><!-- .entry-header -->
+
+			    <div class="entry-content">
+			        <?php 
+
+			        	$excerpt = get_the_excerpt();
+						if ( $excerpt != '' ) {
+			        		the_excerpt();
+			        	} else {
+			        		$content = get_the_content('');
+			        		echo '<p>' . wp_trim_words( $content, $num_words = 100, '' ) . '<br><br><a href="' . get_permalink() . '"><span class="meta-nav btn pull-right">READ MORE</span></a><p>';
+			        	}
+			        ?>
+			        <div class="socialposticons visible-desktop">
+			            <span class='st_facebook_hcount' displayText='Facebook'></span>&nbsp;&nbsp;&nbsp;&nbsp;
+			            <span class='st_twitter_hcount' displayText='Tweet'></span>
+			        </div>
+			        <?php wp_link_pages( array('before' => '<div class="page-links">' . __( 'Pages:', 'AAF' ), 'after' => '</div>') ); ?>
+			        <?php edit_post_link( __( 'Edit', 'AAF' ), '<span class="edit-link">', '</span>' ); ?>
+			    </div><!-- .entry-content -->
+			</article><!-- #post-<?php the_ID(); ?> -->
     	<?php endforeach; ?>
 
 		
-		<h1 class="sectiontitle">Lead Video</h1>
-
-		<img src="http://fakeimg.pl/450x200/00CED1/FFF/?text=video">
-	
+		<h1 class="sectiontitle">Lead Video</h1>	
 
 		<?php 	//latest updates arguments
 			$args = array(
-				'category_name' => 'news-updates',
+				'category_name' => 'video',
 				'posts_per_page' => 1
 			);
 		
@@ -48,14 +65,14 @@ get_header();
 			// The Loop
 			while ( $querylatestupdates->have_posts() ) :
 				$querylatestupdates->the_post();
-				get_template_part( 'content', 'front-page' );
+				get_template_part( 'content', 'video' );
 			endwhile;
 			?>
 
 		<h1 class="sectiontitle">Health Beat</h1>
 
 	
-	<?php
+		<?php
 		
 			//latest upcoming events arguments
 			$argsupevents = array(
@@ -76,7 +93,7 @@ get_header();
 
 			<!-- <h1 class="sectiontitle">Featured News</h1>
 
-	<?php
+		<?php
 		
 			//latest featured arguments
 			$argsfeatured = array(

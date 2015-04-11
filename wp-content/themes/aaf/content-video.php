@@ -1,6 +1,6 @@
 <?php
 /**
- * The template used for displaying page content in page.php
+ * The template used for displaying video content in front-page.php
  *
  * @package AAF
  * @package AAF - 2013 1.0
@@ -15,9 +15,17 @@
         <h1 class="entry-title graybg"><?php the_title(); ?></h1>
     </header><!-- .entry-header -->
 
-    <div class="entry-content">
+    <div class="entry-content videoWrapper">
         <?php 
+            $re = "/(\\[embed\\]\\S*)/"; 
+            $content = get_the_content('');
+            $arr = preg_match($re, $content, $matches);
+            $video = $matches[0];
+
+            $clean_content = preg_replace($re, '', $content);
             the_content( );
+            
+        	//echo '<p>' . wp_trim_words( $clean_content, $num_words = 200, '' ) . '<br><br><a href="' . get_permalink() . '"><span class="meta-nav btn pull-right">READ MORE</span></a><p>';
         ?>
         <div class="socialposticons visible-desktop">
             <span class='st_facebook_hcount' displayText='Facebook'></span>&nbsp;&nbsp;&nbsp;&nbsp;

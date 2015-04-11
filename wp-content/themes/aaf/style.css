@@ -624,6 +624,30 @@ h1.sectiontitle {
     color: #BE2025;
 }
 
+.videoWrapper {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    padding-top: 25px;
+    height: 0;
+}
+
+.videoWrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.videoWrapper p {
+    display: none;
+}
+
+#content article:first-child {
+     /* Your CSS here */
+}
+
+
 /*Media queries*/
 /*Larger modern laptops and desktops*/
 @media (min-width: 1200px) {
