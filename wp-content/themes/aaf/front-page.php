@@ -69,47 +69,7 @@ get_header();
 			endwhile;
 			?>
 
-		<h1 class="sectiontitle">Health Beat</h1>
 
-	
-		<?php
-		
-			//latest upcoming events arguments
-			$argsupevents = array(
-				'post_type'=>'event',
-				'event_start_after' => 'today',
-				'posts_per_page' => 1,
-				'group_events_by'=>'occurrence'//Don't group by series
-			);
-		
-			// The Query
-			$queryupevents = new WP_Query( $argsupevents );
-			// The Loop
-			while ( $queryupevents->have_posts() ) :
-				$queryupevents->the_post();
-				get_template_part( 'content', 'front-page' );
-			endwhile;
-			?>
-
-			<!-- <h1 class="sectiontitle">Featured News</h1>
-
-		<?php
-		
-			//latest featured arguments
-			$argsfeatured = array(
-				'category_name' => 'featured',
-				'posts_per_page' => 1
-			);
-		
-			// The Query
-			$queryfeatured = new WP_Query( $argsfeatured );
-		
-			// The Loop
-			while ( $queryfeatured->have_posts() ) :
-				$queryfeatured->the_post();
-				get_template_part( 'content', 'front-page' );
-			endwhile;
-		?> -->
 
     </div><!-- #content .site-content -->
 </div><!-- #primary .content-area -->
