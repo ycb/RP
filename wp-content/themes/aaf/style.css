@@ -912,6 +912,10 @@ font-size: 1.75rem;
         margin-right: 0rem;
     }
 
+    .widget ul {
+        padding-right: 0;
+    }
+
 }
 
 /* Landscape phone to portrait tablet */
@@ -1004,6 +1008,10 @@ font-size: 1.75rem;
     }
 
     .site-footer nav .footer-menu ul {
+    }
+
+    .widget ul {
+        padding-right: 0;
     }
 
 }
