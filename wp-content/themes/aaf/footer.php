@@ -15,9 +15,9 @@
 <footer id="colophon" class="site-footer container" role="contentinfo">
 
     <div class="row">
-        <div class="ad span12">
+        <!--<div class="ad span12">
             <img src="http://fakeimg.pl/350x200/00CED1/FFF/?text=large+ad">
-        </div>
+        </div>-->
         <div class="span12">    
             <div class="span8 map visible-desktop">
                 <!-- <a href="https://maps.google.com/maps?f=q&source=embed&hl=en&geocode=&q=Omega+Boys+Club,+1060+Tennessee+Street,+San+Francisco,+CA&aq=0&oq=ome&sll=37.269174,-119.306607&sspn=12.3355,20.061035&ie=UTF8&hq=Omega+Boys+Club,+1060+Tennessee+Street,+San+Francisco,+CA&hnear=&radius=15000&ll=37.758517,-122.389434&spn=0.095815,0.130291&t=m&z=13&iwloc=A&cid=6160364427089974319"><img class="pull-left map" src="<?php bloginfo('stylesheet_directory'); ?>/images/map.png"></a>

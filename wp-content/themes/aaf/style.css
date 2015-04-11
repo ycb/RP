@@ -472,7 +472,7 @@ html, body {
     }
 
 .site-footer {
-    height: 17.5rem;
+    /* height: 17.5rem; PS */
     background: #000;
     color: #fff;
     font-family: 'UniversLight' Arial, Helvetica, sans-serif;
