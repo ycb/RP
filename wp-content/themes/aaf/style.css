@@ -683,11 +683,27 @@ h1.sectiontitle {
     width: 100%;
 }
 
+
     /* tabber */
 
 li#text-4 {
     list-style: none;
-    }
+}
+
+/*Map fixes*/
+.locationinfo img {
+  max-width: 100%;
+  height: auto;
+}
+
+.locationinfo .storycontent {
+    font-size: 1rem;
+}
+
+.locationinfo .meta,
+.locationinfo .blogdate {
+    font-size: .7rem;
+}
 
 
 /*Media queries*/
