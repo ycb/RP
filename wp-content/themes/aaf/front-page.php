@@ -25,7 +25,7 @@ get_header();
     		<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
     			<header class="entry-header">
-			        <h1 class="entry-title graybg"><a href="<?php get_permalink() ?>"><?php the_title(); ?></a></h1>
+			        <h1 class="entry-title graybg"><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h1>
 			    </header><!-- .entry-header -->
 
 				<aside class="front-thumb">
