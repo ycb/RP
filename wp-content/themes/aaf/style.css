@@ -865,6 +865,7 @@ font-size: 1.75rem;
         padding: 10px;
         color: #FFFFFF;
         background: #375F7F;
+        line-height: 1.5rem;
     }
 
     .ui-widget-content .mission a {
