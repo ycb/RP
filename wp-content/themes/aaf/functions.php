@@ -97,9 +97,15 @@ class AAF {
         wp_enqueue_style( 'prettyPhoto', $template_directory . '/css/prettyPhoto.css' );
         wp_enqueue_style( 'style', $template_directory . '/css/style.css' );
         wp_enqueue_style( 'AAFstyle', $template_directory . '/style.css' );
+        wp_enqueue_style( 'tabber', $template_directory . '/tabber/jquery-ui.css' );
 
         // all scripts
         wp_enqueue_script( 'bootstrap', $template_directory . '/js/bootstrap.min.js', array('jquery'), '20120206', true );
+
+
+        // tabber js
+        wp_enqueue_script( 'tabber', 'http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js', array('jquery'), '20150425', true );
+
 
         // comment reply on single posts
         if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
@@ -137,6 +143,36 @@ class AAF {
             'before_title' => '<h3 class="widget-title">',
             'after_title' => '</h3>',
         ) );
+
+   /**
+    * 3 Tabs in Sidebar
+    *
+    */
+
+        register_sidebar( array(
+            'name' => __( 'Tab1', 'AAF' ),
+            'before_widget'  =>   '<li id="%1$s" class="widget %2$s">',
+            'after_widget'   =>   "</li>\n",
+            'before_title'   =>   '<h3 class="widget-title">',
+            'after_title'    =>   "</h3>\n"
+        ) );
+
+            register_sidebar( array(
+            'name' => __( 'Tab2', 'AAF' ),
+            'before_widget'  =>   '<li id="%1$s" class="widget %2$s">',
+            'after_widget'   =>   "</li>\n",
+            'before_title'   =>   '<h3 class="widget-title">',
+            'after_title'    =>   "</h3>\n"
+        ) );
+
+            register_sidebar( array(
+            'name' => __( 'Tab3', 'AAF' ),
+            'before_widget'  =>   '<li id="%1$s" class="widget %2$s">',
+            'after_widget'   =>   "</li>\n",
+            'before_title'   =>   '<h3 class="widget-title">',
+            'after_title'    =>   "</h3>\n"
+        ) );
+
 
     }
 

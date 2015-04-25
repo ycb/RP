@@ -55,4 +55,11 @@
 			$('.entry-content .meta-nav').removeClass('btn-large btn-block');
 		}
 	});
+
+    //tabber
+
+      $(document).ready(function() {
+        $("#tabs").tabs({ fx: { height: 'toggle', opacity: 'toggle' } });
+      });
+
 })(jQuery);

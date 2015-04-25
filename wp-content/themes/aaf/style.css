@@ -683,6 +683,12 @@ h1.sectiontitle {
     width: 100%;
 }
 
+    /* tabber */
+
+li#text-4 {
+    list-style: none;
+    }
+
 
 /*Media queries*/
 /*Larger modern laptops and desktops*/
@@ -828,6 +834,31 @@ h1.sectiontitle {
     .carousel-caption h4 {
 font-size: 1.75rem;
     }
+
+    /* tabber */
+
+    ul.ui-tabs-nav li {
+        font-size: 85%;
+        list-style: none;
+    }
+
+        .mission {
+        -moz-border-radius: 1em 1em 1em 1em; 
+        border: 4px solid #5590C0;
+        padding: 10px;
+        color: #FFFFFF;
+        background: #375F7F;
+    }
+
+    .ui-widget-content .mission a {
+        color: #85BD2A;
+        text-decoration: underline;
+    }
+
+    .ui-widget-content .mission a:hover {
+        color: #FFFFFF;
+    }
+
 }
 
 @media (min-width: 979px) and (max-width: 1199px) {
