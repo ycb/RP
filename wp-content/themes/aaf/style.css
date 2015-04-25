@@ -197,7 +197,7 @@ input[type="color"] .uneditable-input {
 .logo {
     display: block;
     width: 342px;
-    height: 72px;
+    height: 80px;
     background: url('images/logo_mobile.png') 0 0 no-repeat;
     margin: 0 0 1.5rem 1.5rem;
 }
@@ -790,11 +790,12 @@ h1.sectiontitle {
         }
 
     .site {
-        padding-top: 1.0rem;
+        padding-top: 1rem;
     }
 
     .site-title {
-        font-size: 2.25rem;
+        font-size: 2rem;
+        padding-top: 1em;
         line-height: 3rem;
         text-align: right;
         color: #404041;
@@ -860,11 +861,11 @@ font-size: 1.75rem;
     }
 
     .site-title {
-        font-size: 2rem;
-        line-height: 2.5rem;
+        font-size: 1.2rem;
+        line-height: 2rem;
         padding-top: 1rem;
         text-align: right;
-        padding-right: 4rem;
+        padding-right: 5rem;
     }
 
     .site-content {
@@ -1018,6 +1019,11 @@ font-size: 1.75rem;
 
 /* Landscape phones and down */
 @media (max-width: 480px) { 
+
+    .logo {
+        width: 100%;
+        background-size: contain;
+    }
 
     .navbar .brand {
         padding-right: 0px;
