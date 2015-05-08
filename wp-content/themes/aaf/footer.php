@@ -27,12 +27,12 @@
             </div>
         
             <span class="span4 social-search pull-right noleftmargin hidden-phone">
-                <!-- <ul class="socialbtns">
-                    <li class="facebook"><a target="_blank" href="http://www.facebook.com/StayAliveAndFree"></a></li>
-                    <li class="twitter"><a target="_blank" href="http://twitter.com/1800soldier"></a></li>
-                    <li class="youtube"><a target="_blank" href="http://www.youtube.com/user/streetsoldiersradio"></a></li>
-                    <li class="flickr"><a target="_blank" href="http://www.flickr.com/photos/92986769@N02/"></a></li>
-                </ul> -->
+                <ul class="socialbtns">
+                        <li class="facebook"><a target="_blank" href="https://www.facebook.com/richmondpulse"></a></li>
+                        <li class="twitter"><a target="_blank" href="http://twitter.com/#!/richmondpulse"></a></li>
+                        <li class="youtube"><a target="_blank" href="https://vimeo.com/channels/798300"></a></li>
+                        <li class="flickr"><a target="_blank" href="http://www.instagram.com/richmondpulse"></a></li>
+                </ul> 
                 <div class="visible-desktop">
                     <?php get_search_form(); ?>
                 </div>

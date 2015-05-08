@@ -25,9 +25,9 @@ get_header();
     		<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
     			<header class="entry-header">
-			        <h1 class="entry-title graybg"><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h1>
+			        <a href="<?php get_permalink() ?>"><h1 class="entry-title graybg"><?php the_title(); ?></h1></a>
 			    </header><!-- .entry-header -->
-
+			    
 				<aside class="front-thumb">
 					<?php the_post_thumbnail('medium');  ?>
 				</aside>
@@ -54,7 +54,7 @@ get_header();
     	<?php endforeach; ?>
 
 		
-		<h1 class="sectiontitle">Lead Video</h1>	
+		<h1 class="sectiontitle">Featured Video</h1>	
 
 		<?php 	//latest updates arguments
 			$args = array(

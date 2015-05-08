@@ -38,8 +38,8 @@
   <!-- #tabs -->
         <div id="tabs">
     <ul>
-        <li><a href="#tab-1"><span>Mission</span></a></li>
-        <li><a href="#tab-2"><span>Categories</span></a></li>
+        <li><a href="#tab-1"><span>Read</span></a></li>
+        <li><a href="#tab-2"><span>Mission</span></a></li>
         <li><a href="#tab-3"><span>Contact</span></a></li>
     </ul>
     <div id="tab-1">
