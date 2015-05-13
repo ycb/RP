@@ -54,7 +54,7 @@ get_header();
     	<?php endforeach; ?>
 
 		
-		<h1 class="sectiontitle">Lead Video</h1>	
+		<h1 class="sectiontitle">Featured Video</h1>	
 
 		<?php 	//latest updates arguments
 			$args = array(
