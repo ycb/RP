@@ -133,10 +133,10 @@ if( function_exists( 'mc4wp_form' ) ) {
             <div class="row-fluid">
                 <div class="span12 socialbtns-container">
                     <ul class="socialbtns">
-                        <li class="facebook"><a target="_blank" href="https://www.facebook.com/richmondpulse"></a></li>
+                        <li class="facebook"><a target="_blank" href="http://www.facebook.com/pages/Richmond-Pulse/191090144262742"></a></li>
                         <li class="twitter"><a target="_blank" href="http://twitter.com/#!/richmondpulse"></a></li>
-                        <li class="youtube"><a target="_blank" href="https://vimeo.com/channels/798300"></a></li>
-                        <li class="flickr"><a target="_blank" href="http://www.instagram.com/richmondpulse"></a></li>
+                        <li class="youtube"><a target="_blank" href="http://vimeo.com/channels/183122/"></a></li>
+                        <li class="flickr"><a target="_blank" href="http://www.instagram.com/richmondpulse.com"></a></li>
                     </ul>
                 </div>
             </div>
