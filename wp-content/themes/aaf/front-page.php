@@ -29,7 +29,7 @@ get_header();
 			    </header><!-- .entry-header -->
 
 				<aside class="front-thumb">
-					<?php the_post_thumbnail('medium');  ?>
+					<a href="<?php the_permalink() ?>"><?php the_post_thumbnail('medium');  ?></a>
 				</aside>
 
 			    <div class="entry-content">
@@ -43,10 +43,10 @@ get_header();
 			        		echo '<p>' . wp_trim_words( $content, $num_words = 100, '' ) . '<br><br><a href="' . get_permalink() . '"><span class="meta-nav btn pull-right">READ MORE</span></a><p>';
 			        	}
 			        ?>
-			        <div class="socialposticons visible-desktop">
+			        <!--<div class="socialposticons visible-desktop">
 			            <span class='st_facebook_hcount' displayText='Facebook'></span>&nbsp;&nbsp;&nbsp;&nbsp;
 			            <span class='st_twitter_hcount' displayText='Tweet'></span>
-			        </div>
+			        </div>-->
 			        <?php wp_link_pages( array('before' => '<div class="page-links">' . __( 'Pages:', 'AAF' ), 'after' => '</div>') ); ?>
 			        <?php edit_post_link( __( 'Edit', 'AAF' ), '<span class="edit-link">', '</span>' ); ?>
 			    </div><!-- .entry-content -->
