@@ -29,7 +29,7 @@ get_header();
 			    </header><!-- .entry-header -->
 
 				<aside class="front-thumb">
-					<a href="<?php the_permalink() ?>"><?php the_post_thumbnail('medium');  ?></a>
+					<a href="<?php the_permalink() ?>"><?php the_post_thumbnail('large');  ?></a>
 				</aside>
 
 			    <div class="entry-content">
