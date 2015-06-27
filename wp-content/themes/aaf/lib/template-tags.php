@@ -113,7 +113,7 @@ function AAF_content_nav( $nav_id ) {
     }
 
     // Don't print empty markup in archives if there's only one page.
-    if ( $wp_query->max_num_pages < 2 && ( is_home() || is_archive() || is_search() ) )
+    if ( $wp_query->max_num_pages < 2 && ( is_home() || is_front_page() || is_archive() || is_search() ) )
         return;
 
     $nav_class = 'site-navigation paging-navigation';
