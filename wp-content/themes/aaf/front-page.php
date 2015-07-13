@@ -53,8 +53,10 @@ get_header();
 			</article><!-- #post-<?php the_ID(); ?> -->
     	<?php endforeach; ?>
 
+    		<a href="http://richmondpulse.org/<?php echo date("Y") ?>"><span class="meta-nav btn">READ MORE</span></a>
+
 		
-		<h1 class="sectiontitle">Featured Video</h1>	
+		<!-- <h1 class="sectiontitle">Featured Video</h1> -->	
 
 		<?php 	//latest updates arguments
 			$args = array(
