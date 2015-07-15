@@ -11,10 +11,7 @@
 	<aside class="front-thumb">
 		<?php the_post_thumbnail('medium');  ?>
 	</aside>
-    <header class="entry-header">
-        <h1 class="entry-title graybg"><a href="<?php get_permalink() ?>"><?php the_title(); ?></a></h1>
-    </header><!-- .entry-header -->
-
+    
     <div class="entry-content videoWrapper">
         <?php 
             $re = "/(\\[embed\\]\\S*)/"; 
@@ -34,4 +31,9 @@
         <?php wp_link_pages( array('before' => '<div class="page-links">' . __( 'Pages:', 'AAF' ), 'after' => '</div>') ); ?>
         <?php edit_post_link( __( 'Edit', 'AAF' ), '<span class="edit-link">', '</span>' ); ?>
     </div><!-- .entry-content -->
+
+<a href="http://richmondpulse.org/category/video/"><span class="meta-nav btn-load-more btn span11">MORE VIDEOS</span></a>
+
+
+    
 </article><!-- #post-<?php the_ID(); ?> -->
