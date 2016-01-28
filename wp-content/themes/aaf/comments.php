@@ -26,6 +26,11 @@ if ( post_password_required() )
 
     <?php // You can start editing here -- including this comment! ?>
 
+<span class="collapseomatic" id="comments<?php the_ID(); ?>"><b>Want to Leave a Comment?</b></span>
+<span id="swap-comments<?php the_ID(); ?>" class="collapseomatic" style="display: none;">Close</span>
+<div id="target-comments<?php the_ID(); ?>" class="collapseomatic_content">
+
+
     <?php if ( have_comments() ) : ?>
         <h2 class="comments-title">
             <?php
@@ -73,3 +78,5 @@ if ( post_password_required() )
     <?php comment_form(); ?>
 
 </div><!-- #comments .comments-area -->
+</div><!-- Collapse-O-Matic -->
+

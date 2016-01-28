@@ -20,7 +20,7 @@
                     <li><a target=_blank href="http://www.youthwire.org/">CALIFORNIA YOUTHWIRE: STATEWIDE YOUTH MEDIA NETWORK</a></li>
                     <li><a href="<?php bloginfo('url'); ?>/contact">Contact</a></li>
                     <li><a href="<?php bloginfo('url'); ?>/join-our-mailing-list">Join Our Mailing List</a></li>
-                    <li><a href="#">Donate</a></li>
+                    <li><a href="https://squareup.com/market/richmond-pulse">Donate</a></li>
                 </ul>
             </div>
         </aside>
