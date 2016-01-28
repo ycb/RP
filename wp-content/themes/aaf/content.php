@@ -25,11 +25,39 @@
 
     <?php if ( is_search() ) : // Only display Excerpts for Search ?>
         <div class="entry-summary">
+<aside class="front-thumb">
+	<?php 
+	the_post_thumbnail('medium'); 
+	?>
+</aside>
+
             <?php the_excerpt(); ?>
         </div><!-- .entry-summary -->
     <?php else : ?>
         <div class="entry-content">
-            <?php the_content( __( 'Continue reading <span class="meta-nav">&rarr;</span>', 'AAF' ) ); ?>
+
+<aside class="front-thumb">
+	<?php 
+	the_post_thumbnail('medium'); 
+	?>
+</aside>
+
+
+
+  <?php 
+
+			        	$excerpt = get_the_excerpt();
+
+						if ( $excerpt != '' ) {
+			        		the_excerpt('More');
+			        	} else {
+			        		$content = get_the_content('');
+			        		echo '<p>' . wp_trim_words( $content, $num_words = 100, '' ) . '<br><br><a href="' . get_permalink() . '"><span class="meta-nav btn pull-right">READ MORE</span></a><p>';
+			        	}
+			        ?>
+
+
+
             <?php wp_link_pages( array('before' => '<div class="page-links">' . __( 'Pages:', 'AAF' ), 'after' => '</div>') ); ?>
         </div><!-- .entry-content -->
     <?php endif; ?>

@@ -102,6 +102,17 @@ input[type="color"] .uneditable-input {
     background: #6D2077;
 }
 
+.site-content .btn.btn-load-more {
+    color: #fff;
+    background: #BE2025;
+}
+
+.site-content .btn.btn-load-more:hover {
+    color: #fff;
+    background: #BE2025;
+    opacity: .5;
+}
+
 .site-content .btn {
      background: #bcbdbf;
      color: #000;
@@ -695,6 +706,15 @@ li#text-4 {
     list-style: none;
 }
 
+.widget ul {padding-right: 0;}
+
+.widget ul li li.jaw_posts {padding: 10px;}
+
+li.jaw_posts:nth-child(odd) { background: #e5e5e5; }
+
+a.jaw_months {color: #484848; text-decoration: none;}
+
+body.single .widget_jal_widget {display: none;}
 
 /*Media queries*/
 /*Larger modern laptops and desktops*/
