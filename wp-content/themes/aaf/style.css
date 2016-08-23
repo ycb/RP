@@ -954,6 +954,10 @@ font-size: 1.75rem;
         width: 100%;
     }
 
+    #secondary.sidebar {
+        clear: both;  /* fixes strange bug on some tablet which would seem to make the background dark with dark text */
+    }
+
     .widget > div {
         padding-right: 0;
     }
